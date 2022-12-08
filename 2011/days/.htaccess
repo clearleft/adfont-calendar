@@ -1,0 +1,7 @@
+RewriteEngine on
+
+Options -Multiviews
+
+RewriteBase /days/
+RewriteRule ^([0-9]+)$ index.php?day=$1
+RewriteRule ^([0-9]+)/$ index.php?day=$1

@@ -1,0 +1,944 @@
+body {
+	background: #000;
+	color: #333;
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	border-top: 3px solid #e9242e;
+}
+
+abbr[title] {
+	border: 0;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+a img {
+	border: 0;
+}
+
+.label div {
+	font-family: "Bauer Bodoni Bold", Bodoni SvtyTwo ITC TT, Bodoni Std, Baskerville, "Times New Roman", serif;
+	font-size: 36px;
+	font-weight: bold;
+	font-size-adjust: 0.443;
+	text-shadow: rgba(255,255,255,0.3) 1px 1px 1px, rgba(0,0,0,0.9) -1px -1px 1px;
+	padding-left: 2px;
+	-moz-transition:	opacity 0.3s;
+	-webkit-transition:	opacity 0.3s;
+	-o-transition:		opacity 0.3s;
+	-ms-transition:		opacity 0.3s;
+	transition:			opacity 0.3s;
+}
+
+.wf-bauerbodonibold-n4-loading .label div {
+	opacity: 0;
+}
+
+#room {
+	background: #513822 url(/i/sideframe_tile.jpg) repeat-y left 120px;
+	padding: 0 13px 0 42px;
+	margin-bottom: 150px;
+	margin-left: 21px;
+	position: relative;
+	-moz-transition:	width 0.5s;
+	-webkit-transition:	width 0.5s;
+	-o-transition:		width 0.5s;
+	-ms-transition:		width 0.5s;
+	transition:			width 0.5s;
+}
+
+#furniture {
+	background: #533F27 url(/i/door_tile_bottomfade.jpg) repeat-x left bottom;
+	padding-bottom: 103px;
+}
+
+#shelves {
+	background: #7C6245 url(/i/door_tile.jpg) repeat 0 120px;
+	padding-bottom: 32px;
+}
+
+ol {	
+	margin: 0;
+	padding: 120px 0 0 0;
+	list-style-type: none;
+	background: #0A0906 url(/i/door_tile_topfade.jpg) repeat-x left top;
+}
+
+li.sh-one, li.sh-two, li.sh-thr {
+	margin: 0;
+	width: 331px;
+	height: 250px;
+	float: left;
+	position: relative;
+	background: url(/i/frame.png) no-repeat;
+	text-align: center;
+	padding-right: 29px;
+	padding-top: 32px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+ul li {
+	float: none;
+	padding: 32px 0 0 0;
+}
+
+#shelves li .bg1 {
+	background-position: 0 0;
+}
+
+#shelves li .bg2 {
+	background-position: -280px -60px;
+}
+
+#shelves li .bg3 {
+	background-position: -265px -225px;
+}
+
+#shelves li .bg4 {
+	background-position: -518px -315px;
+}
+
+#shelves li .bg5 {
+	background-position: -180px -160px;
+}
+
+#shelves li .bg6 {
+	background-position: -205px -25px;
+}
+
+#shelves li .bg7 {
+	background-position: -345px -20px;
+}
+
+#shelves li .bg8 {
+	background-position: -112px -112px;
+}
+
+#shelves li .bg9 {
+	background-position: -465px -25px;
+}
+
+#shelves li .bg10 {
+	background-position: -65px -190px;
+}
+
+
+
+.door img {
+	position: absolute;
+	bottom: 5px;
+	right: 4px;	
+	border: 0;
+}
+
+.door {
+	position: absolute;
+	top: 32px;
+	left: 1px;
+	-moz-box-shadow:	inset 1px 1px 5px 2px rgba(0,0,0,0.7);
+	-webkit-box-shadow:	inset 1px 1px 5px 2px rgba(0,0,0,0.7);
+	-o-box-shadow:		inset 1px 1px 5px 2px rgba(0,0,0,0.7);
+	-ms-box-shadow:		inset 1px 1px 5px 2px rgba(0,0,0,0.7);
+	box-shadow:			inset 1px 1px 5px 2px rgba(0,0,0,0.7);
+}
+
+a:hover .door {
+	z-index: 100;
+}
+
+.sh-one a:hover .door {
+	-moz-transform:   rotate(-0.25deg);	
+	-webkit-transform:rotate(-0.25deg);
+	-o-transform: 	  rotate(-0.25deg);
+	-ms-transform: 	  rotate(-0.25deg);
+	transform: 		  rotate(-0.25deg);
+}
+
+.sh-two a:hover .door {
+	-moz-transform:   rotate(-0.3deg);	
+	-webkit-transform:rotate(-0.3deg);
+	-o-transform: 	  rotate(-0.3deg);	
+	-ms-transform:	  rotate(-0.3deg);	
+	transform: 		  rotate(-0.3deg);	
+}
+
+.sh-thr a:hover .door {
+	-moz-transform:		rotate(-0.35deg);	
+	-webkit-transform:	rotate(-0.35deg);
+	-o-transform:		rotate(-0.35deg);	
+	-ms-transform:		rotate(-0.35deg);	
+	transform:			rotate(-0.35deg);	
+}
+
+a:hover .door,
+.sh-thr .thr a:link.open .door, .sh-thr .thr a:visited.open .door, .sh-thr .thr a:hover.open .door,
+.sh-thr .one a:link.open .door, .sh-thr .one a:visited.open .door, .sh-thr .one a:hover.open .door,
+.sh-thr .two a:link.open .door, .sh-thr .two a:visited.open .door, .sh-thr .two a:hover.open .door,
+.sh-two .one a:link.open .door, .sh-two .one a:visited.open .door, .sh-two .one a:hover.open .door,
+.sh-two .two a:link.open .door, .sh-two .two a:visited.open .door, .sh-two .two a:hover.open .door,
+.sh-one a:link.open .door, .sh-one a:visited.open .door, .sh-one a:hover.open .door {
+	-moz-box-shadow:	inset 1px 1px 5px 2px rgba(0,0,0,0.7), 0 0 10px 5px rgba(0,0,0,0.4);
+	-webkit-box-shadow:	inset 1px 1px 5px 2px rgba(0,0,0,0.7), 0 0 10px 5px rgba(0,0,0,0.4);
+	-o-box-shadow:		inset 1px 1px 5px 2px rgba(0,0,0,0.7), 0 0 10px 5px rgba(0,0,0,0.4);	
+	-ms-box-shadow:		inset 1px 1px 5px 2px rgba(0,0,0,0.7), 0 0 10px 5px rgba(0,0,0,0.4);	
+	box-shadow:			inset 1px 1px 5px 2px rgba(0,0,0,0.7), 0 0 10px 5px rgba(0,0,0,0.4);	
+}
+
+.sh-thr .thr a:link.open .door, .sh-thr .thr a:visited.open .door, .sh-thr .thr a:hover.open .door,
+.sh-two .one a:link.open .door, .sh-two .one a:visited.open .door, .sh-two .one a:hover.open .door,
+.sh-two .two a:link.open .door, .sh-two .two a:visited.open .door, .sh-two .two a:hover.open .door {
+	-moz-transform:		rotate(-150deg);	
+	-webkit-transform:	rotate(-150deg);	
+	-o-transform:		rotate(-150deg);	
+	-ms-transform:		rotate(-150deg);	
+	transform:			rotate(-150deg);
+}
+
+.sh-one a:link.open .door, .sh-one a:visited.open .door, .sh-one a:hover.open .door {
+	-moz-transform:		rotate(-122deg);	
+	-webkit-transform:	rotate(-122deg);	
+	-o-transform:		rotate(-122deg);	
+	-ms-transform:		rotate(-122deg);	
+	transform:			rotate(-122deg);
+}
+
+.sh-thr .one a:link.open .door, .sh-thr .one a:visited.open .door, .sh-thr .one a:hover.open .door,
+.sh-thr .two a:link.open .door, .sh-thr .two a:visited.open .door, .sh-thr .two a:hover.open .door {
+	-moz-transform:		rotate(-122deg);	
+	-webkit-transform:	rotate(-122deg);	
+	-o-transform:		rotate(-122deg);	
+	-ms-transform:		rotate(-122deg);	
+	transform:			rotate(-122deg);
+}
+
+/* @group Secret doors */
+
+li.shh .open .door, 
+li.shh .closed .door, 
+li.more .open .door, 
+li.more .closed .door, 
+li.vevent .open .door, 
+li.vevent .closed .door {
+	z-index: 200;
+	-moz-transition:	-moz-transform 1.5s;
+	-webkit-transition:	-webkit-transform 1.5s;
+	-ms-transition:		-ms-transform 1.5s;
+	-o-transition:		-o-transform 1.5s;
+	transition:			transform 1.5s;
+}
+
+li.shh a .door, li.more a .door {
+	-moz-transition:	none;
+	-webkit-transition:	none;
+	-o-transition:		none;
+	-ms-transition:		none;
+	transition:			none;
+}
+
+.sh-two .shh .shelf img, .sh-thr .shh .shelf img {	
+	-moz-transition:	-moz-transform 0.75s;
+	-webkit-transition:	-webkit-transform 0.75s;
+	-ms-transition:		-ms-transform 0.75s;
+	-o-transition:		-o-transform 0.75s;
+	transition:			transform 0.75s;
+}
+
+.swingleftmid img, .swingrightmid img {
+	-moz-transform:		rotate(0deg);
+	-webkit-transform:	rotate(0deg);
+	-ms-transform:		rotate(0deg);
+	-o-transform:		rotate(0deg);
+	transform:			rotate(0deg);	
+}
+
+.swingleft img {
+	-moz-transform:		rotate(3deg);
+	-webkit-transform:	rotate(3deg);
+	-ms-transform:		rotate(3deg);
+	-o-transform:		rotate(3deg);
+	transform:			rotate(3deg);
+}
+
+.swingright img {
+	-moz-transform:		rotate(-3deg);
+	-webkit-transform:	rotate(-3deg);
+	-ms-transform:		rotate(-3deg);
+	-o-transform:		rotate(-3deg);
+	transform:			rotate(-3deg);
+}
+
+#shelf-C img {	
+	-moz-transform-origin:		66px 0px;
+	-webkit-transform-origin:	66px 0px;
+	-ms-transform-origin:		66px 0px;
+	-o-transform-origin:		66px 0px;
+	transform-origin:			66px 0px;
+}
+
+#shelf-D img {	
+	-moz-transform-origin:		38px 0px;
+	-webkit-transform-origin:	38px 0px;
+	-ms-transform-origin:		38px 0px;
+	-o-transform-origin:		38px 0px;
+	transform-origin:			38px 0px;
+}
+
+#shelf-G img {	
+	-moz-transform-origin:		38px 0px;
+	-webkit-transform-origin:	38px 0px;
+	-ms-transform-origin:		38px 0px;
+	-o-transform-origin:		38px 0px;
+	transform-origin:			38px 0px;
+}
+
+#shelf-H img {	
+	-moz-transform-origin:		42px 0px;
+	-webkit-transform-origin:	42px 0px;
+	-ms-transform-origin:		42px 0px;
+	-o-transform-origin:		42px 0px;
+	transform-origin:			42px 0px;
+}
+
+
+#shelf-L img {	
+	-moz-transform-origin:		32px 0px;
+	-webkit-transform-origin:	32px 0px;
+	-ms-transform-origin:		32px 0px;
+	-o-transform-origin:		32px 0px;
+	transform-origin:			32px 0px;
+}
+
+
+#shelf-M img {	
+	-moz-transform-origin:		24px 0px;
+	-webkit-transform-origin:	24px 0px;
+	-ms-transform-origin:		24px 0px;
+	-o-transform-origin:		24px 0px;
+	transform-origin:			24px 0px;
+}
+
+#shelf-S img {	
+	-moz-transform-origin:		41px 0px;
+	-webkit-transform-origin:	41px 0px;
+	-ms-transform-origin:		41px 0px;
+	-o-transform-origin:		41px 0px;
+	transform-origin:			41px 0px;
+}
+
+
+#shelf-W img {	
+	-moz-transform-origin:		38px 0px;
+	-webkit-transform-origin:	38px 0px;
+	-ms-transform-origin:		38px 0px;
+	-o-transform-origin:		38px 0px;
+	transform-origin:			38px 0px;
+}
+
+#shelf-asterisk img {	
+	-moz-transform-origin:		59px 0px;
+	-webkit-transform-origin:	59px 0px;
+	-ms-transform-origin:		59px 0px;
+	-o-transform-origin:		59px 0px;
+	transform-origin:			59px 0px;
+}
+
+/* @end */
+
+/* @group One door */
+
+li.sh-one .shelf {
+	width: 331px;
+	height: 250px;
+	background: #694325 url(/i/backpanel_large.jpg) no-repeat left center;	
+}
+
+.sh-one .door {
+	width: 331px;
+	height: 250px;
+	background: #8C6A47 url(/i/wood_texture.jpg);
+	-moz-transform-origin:		314px 232px; /* 17 18 */
+	-webkit-transform-origin:	314px 232px;
+	-ms-transform-origin:		314px 232px;
+	-o-transform-origin:		314px 232px;
+	transform-origin:			314px 232px;
+
+}
+
+.sh-one .label {
+	background: url(/i/label1.png) no-repeat center center;	
+	width: 147px;
+	height: 106px;
+	position: absolute;
+	top: 72px;
+	left: 92px;
+}
+
+.sh-one .label div {
+	position: absolute;
+	width: 147px;
+	height: 1em;
+	top: 54px;
+	margin-top: -0.5em;
+}
+
+.wf-bauerbodonibold-n4-active .sh-one .label div {
+	top: 49px;	
+}
+
+/* @end */
+
+/* @group Two doors */
+
+li.sh-two li.one {
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+
+li.sh-two li.two {
+	position: absolute;
+	left: 180px;
+	top:0px;
+}
+
+li.sh-two li.one .shelf {
+	padding-right: 29px;
+	width: 151px;
+	height: 250px;
+	background: #5B391E url(/i/backpanel_two.jpg) no-repeat left center;
+}
+
+li.sh-two li.two .shelf {
+	width: 151px;
+	height: 250px;
+	background: #5B391E url(/i/backpanel_two.jpg) no-repeat -180px center;
+}
+
+.sh-two .door {
+	width: 150px;
+	height: 250px;
+	background: #8C6A47 url(/i/wood_texture.jpg);
+	-moz-transform-origin:		133px 232px; /* 17 18 */
+	-webkit-transform-origin:	133px 232px;
+	-o-transform-origin:		133px 232px;
+	-ms-transform-origin:		133px 232px;
+	transform-origin:			133px 232px;
+}
+
+.sh-two .label {
+	background: url(/i/label3.png) no-repeat center center;	
+	width: 113px;
+	height: 84px;
+	position: absolute;
+	top: 83px;
+	left: 18px;
+}
+
+.sh-two .label div {
+	position: absolute;
+	width: 113px;
+	height: 1em;
+	top: 36px;
+	margin-top: -0.5em;
+}
+
+.wf-bauerbodonibold-n4-active .sh-two .label div {
+	top: 31px;	
+}
+
+/* @end */
+
+
+
+/* @group Three doors */
+
+li.sh-thr li.one {
+	position: absolute;
+	left: 0px;
+	top:0px;
+}
+
+li.sh-thr li.two {
+	position: absolute;
+	left: 0px;
+	top:173px;
+	padding: 0;
+}
+
+li.sh-thr li.thr {
+	position: absolute;
+	left: 180px;
+	top:0px;
+}
+
+li.sh-thr li.one .shelf {
+	width: 150px;
+	padding-right:30px;
+	height: 141px;
+	background: #51341C url(/i/backpanel_three.jpg) no-repeat 0px 0px;
+}
+
+li.sh-thr li.two .shelf {
+	width: 150px;
+	padding-right: 30px;
+	height: 110px;
+	background: #51341C url(/i/backpanel_three.jpg) no-repeat 0px -141px;
+}
+
+li.sh-thr li.thr .shelf {
+	width: 151px;
+	height: 250px;
+	background: #51341C url(/i/backpanel_three.jpg) no-repeat -180px center;
+}
+
+.sh-thr .door {
+	width: 150px;
+	height: 110px;
+	background: #8C6A47 url(/i/wood_texture.jpg);
+	-moz-transform-origin:		133px 92px; /* 17 18 */
+	-webkit-transform-origin:	133px 92px;
+	-o-transform-origin:		133px 92px;
+	-ms-transform-origin:		133px 92px;
+	transform-origin:			133px 92px;
+}
+
+.sh-thr li.two .door {
+	top: 0;
+}
+
+.sh-thr li.thr .door {
+	height: 250px;
+	-moz-transform-origin:		133px 232px; /* 17 18 */
+	-webkit-transform-origin:	133px 232px;
+	-o-transform-origin:		133px 232px;
+	-ms-transform-origin:		133px 232px;
+	transform-origin:			133px 232px;
+}
+
+.sh-thr li.one .label, .sh-thr li.two .label {
+	background: url(/i/label2.png) no-repeat center center;
+	width: 92px;
+	height: 58px;
+	position: absolute;
+	top: 26px;
+	left: 29px;
+}
+
+.sh-thr li.one .label div, .sh-thr li.two .label div {
+	position: absolute;
+	width: 92px;
+	height: 1em;
+	top: 26px;
+	margin-top: -0.5em;
+}
+
+.wf-bauerbodonibold-n4-active .sh-thr li.one .label div, .wf-bauerbodonibold-n4-active .sh-thr li.two .label div {
+	top: 22px;	
+}
+
+.sh-thr li.thr .label {
+	background: url(/i/label3.png) no-repeat center center;	
+	width: 113px;
+	height: 84px;
+	position: absolute;
+	top: 83px;
+	left: 18px;
+}
+
+.sh-thr li.thr .label div {
+	position: absolute;
+	width: 113px;
+	height: 1em;
+	top: 36px;
+	margin-top: -0.5em;
+}
+
+.wf-bauerbodonibold-n4-active .sh-thr li.thr .label div {
+	top: 31px;	
+}
+
+/* @end */
+
+#fontdeck {	
+	background: #7F5F3E url(/i/door_fontdeck.jpg) no-repeat center center;
+}
+
+br.clear {
+	clear: both;
+}
+
+#rightrail {
+	background: #513822 url(/i/sideframe_tile.jpg) repeat-y right 120px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 42px;
+	height: 100%;
+}
+
+img#topfadeL, img#topfadeR, img#bottomfadeL, img#bottomfadeR {
+	position: absolute;
+}
+
+img#topfadeL {
+	left: 0;
+	top: 0px;	
+}
+
+img#topfadeR {
+	right: 0;
+	top: 0px;
+}
+
+img#bottomfadeL {
+	left: 0;
+	bottom: 0;
+}
+
+img#bottomfadeR {
+	right: 0;
+	bottom:0;
+}
+
+/* @group Media queries */
+
+@media screen and (min-width: 456px) {
+  #room {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 816px) {
+  #room {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1176px) {
+  #room {
+    width: 1080px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  #room {
+    width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1896px) {
+  #room {
+    width: 1800px;
+  }
+}
+
+@media screen and (min-width: 2256px) {
+  #room {
+    width: 2160px;
+  }
+}
+
+/* @end */
+
+/* @group Popup */
+
+body.day {
+	background: #000 url(/i/popup_bg.jpg) no-repeat center top;
+}
+
+.popup a {
+	text-decoration: underline;
+}
+
+.popup {
+	font-family:"PT Sans", "PT Sans Latin CE Regular", Calibri, 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+	font-size: 10px;
+	font-size-adjust:0.506;
+	text-align: left;
+}
+
+.popup em {
+	font-family:"PT Sans", "PT Sans Latin CE Italic", Calibri, 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+	font-size-adjust:0.506; font-weight:normal; font-style:italic;
+}
+
+.popup strong {
+	font-family:"PT Sans", "PT Sans Latin CE Bold", Calibri, 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+	font-size-adjust:0.506; font-weight:bold; font-style:normal;
+}
+
+.popup .main {
+	min-height: 41em;
+	background: #fff;
+	color: #525252;
+	width: 65em;
+	padding: 2.5em 10em 2.5em 2.5em;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	-moz-border-radius:0.5em;
+	-o-border-radius:0.5em;
+	-webkit-border-radius:0.5em;
+	-ms-border-radius:0.5em;
+	border-radius:0.5em;
+	-moz-box-shadow:	inset 1px 1px 1em 0.25em rgba(0,0,0,0.25), 0 0 1em rgba(0,0,0,0.8);
+	-webkit-box-shadow:	inset 1px 1px 1em 0.25em rgba(0,0,0,0.25), 0 0 1em rgba(0,0,0,0.8);
+	-o-box-shadow:		inset 1px 1px 1em 0.25em rgba(0,0,0,0.25), 0 0 1em rgba(0,0,0,0.8);
+	-ms-box-shadow:		inset 1px 1px 1em 0.25em rgba(0,0,0,0.25), 0 0 1em rgba(0,0,0,0.8);
+	box-shadow:			inset 1px 1px 1em 0.25em rgba(0,0,0,0.25), 0 0 1em rgba(0,0,0,0.8);
+}
+
+.popup.about .main {
+	width: 43em;
+}
+
+.popup .close {
+	text-align: right;
+	width: 77.5em;
+	margin: 0 auto 0 auto;
+}
+
+.popup.about .close {
+	width:55.5em;
+}
+
+.about .main h1 {
+	font-family:"Adelle Bold", Cambria, "Times New Roman", serif;
+	font-size-adjust:0.523; 
+	font-weight:bold; 
+}
+
+.info {
+	width:23.571428571428571em;
+	float: right;
+	font-size: 1.4em;
+	line-height: 1.285714285714286em; /* 18px */
+}
+
+.about .info, .video .info {
+	width: auto;
+	float: none;
+}
+
+.video .hd, .video .st {
+	height: 26em;
+	margin: 0 auto;
+}
+
+.video .st {
+	width: 33em;
+}
+
+
+.popup .close img {
+	width: 4.5em;
+	height: 3.9em;
+	opacity: 0.85;
+}
+
+h1 {
+	color: #191f2c;
+	margin: 0 0 0.520833333333333em 0;
+	font-size: 4.8em;
+	line-height: 1;
+	padding-bottom: 0.125em;
+	border-bottom: 1px solid #dbdee3;
+	text-rendering:optimizeLegibility;
+}
+
+.video h1 {
+	border: 0;
+	margin: 0.5em 0 0 0;
+	padding: 0;
+	font-size: 2em;
+}
+
+#fdlogo {
+	position: absolute;
+	top: 2.5em;
+	right: 2.5em;
+}
+
+#fdlogo img {
+	height: 11.9em;
+	width: 5em;
+}
+
+#fdlogo.amp img {
+	height: 5em;
+}
+
+dl, dt, dd {
+	margin: 0;
+	line-height: 1.714285714285714em; /* 24px */
+}
+
+dt {
+	text-transform: uppercase;
+	color: #999;
+	float: left;
+	clear: left;
+	width: 5.5em;
+}
+
+dd {
+	border-bottom: 1px dotted #dbdee3;
+}
+
+dl {
+	border-top: 1px dotted #dbdee3;
+}
+
+.info p {
+	margin: 1em 0 1.285714285714286em 0;
+}
+
+.popup h2 {
+	font-family:"Adelle Light", Cambria, "Times New Roman", serif;
+	font-size-adjust:0.516;
+	font-weight:200;
+	font-size: 1.5em;
+	line-height: 1.142857142857143em; /* 24px */
+	margin: 0;
+	padding-top: 1.142857142857143em;
+	border-top: 1px dotted #dbdee3;
+}
+
+.popup.about h2 {
+	border-top: none;
+	padding-top: 0.571428571428571em;
+}
+
+.sampler {
+	-moz-border-radius:0.5em;
+	-o-border-radius:0.5em;
+	-webkit-border-radius:0.5em;
+	-ms-border-radius:0.5em;
+	border-radius:0.5em;
+	color: #191f2c;
+	background: #dbdee3;
+	width: 25.7em;
+	padding: 1.4em;
+	font-size: 1em;
+}
+
+.sampler p {
+	line-height: 1.1;
+	margin: 0 0 0.1em 0;
+}
+
+.popup .font a {
+	background: #D40F1A url(/i/arrow_a.png) no-repeat right center;
+	width: 10.714285714285714em;
+	color: #eee;
+	display: block;
+	padding: 0.142857142857143em 1.928571428571429em 0.142857142857143em 0.5em;
+}
+
+.popup .font a:hover {
+	color: #fff;
+}
+
+.popup .font a:link, .popup .font a:visited {
+	text-decoration: none;	
+}
+
+.popup .font p {
+	background: url(/i/arrow-top.png) no-repeat left top;
+	padding-top: 0.214285714285714em;
+	margin: 0;
+	width: 13.142857142857143em;
+}
+
+.popup .font {
+	background: url(/i/arrow-bot.png) no-repeat left bottom;
+	padding-bottom: 0.214285714285714em;
+	width: 13.142857142857143em;
+}
+
+.popup .free {
+	border-bottom: 1px dotted #dbdee3;
+	padding-bottom: 0.428571428571429em;
+}
+
+small {
+	padding-top: 1em;
+	font-size: 1.1em;
+	display: block;
+	clear: both;
+	text-indent: -0.4em;
+	line-height: 1.3em;
+}
+
+.info small {
+	padding: 0;
+	font-size: 0.785714285714286em;
+	text-indent: 0;
+	line-height: inherit;
+	clear: none;
+}
+
+.about small {
+	text-indent: -0.55em;
+}
+
+.smallcaps {
+	font-size: 0.909090909090909em;
+	letter-spacing: 0.1em;
+}
+
+/* @end */
+
+/* @group Lightbox */
+
+#lightbox .popup {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #000 url(/i/popup_bg.jpg) no-repeat center top;
+	opacity: 0;
+	z-index: -1;
+}
+
+#lightbox .popup.lightbox {
+	z-index: 300;
+}
+
+/* @end */
+
+.shelf .popup .close {
+	display: none;
+}
+
+.shelf .popup .main {	
+	-moz-box-shadow:	inset 1px 1px 5em 0 rgba(0,0,0,0.2), 0 0 2em rgba(0,0,0,0.8);
+	-webkit-box-shadow:	inset 1px 1px 5em 0 rgba(0,0,0,0.2), 0 0 2em rgba(0,0,0,0.8);
+	-o-box-shadow:		inset 1px 1px 5em 0 rgba(0,0,0,0.2), 0 0 2em rgba(0,0,0,0.8);
+	-ms-box-shadow:		inset 1px 1px 5em 0 rgba(0,0,0,0.2), 0 0 2em rgba(0,0,0,0.8);
+	box-shadow:			inset 1px 1px 5em 0 rgba(0,0,0,0.2), 0 0 2em rgba(0,0,0,0.8);
+}
+
+.sh-two .more .shelf .popup, .sh-thr .more .shelf.ampersand .popup {
+	font-size: 2px;
+	padding: 60px 0 0 7px;
+}
+
+.sh-thr .more .shelf .popup {
+	font-size: 1.7px;
+	padding: 8px 0 0 3px;
+}
+
+.vevent .shelf .popup {
+	font-size: 3px;
+	padding: 45px 0 0 7px;
+}
